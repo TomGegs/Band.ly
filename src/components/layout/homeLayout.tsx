@@ -4,8 +4,7 @@ import NavigationBar from '../navigationBar/NavigationBar';
 const HomeLayout = () => {
     return (
         <>
-            <NavigationBar />
-            <main className="flex h-[100lvh]  min-h-screen bg-red-300 ">
+            <main className="flex h-[100lvh]  min-h-screen ">
                 <Outlet />
             </main>
         </>
