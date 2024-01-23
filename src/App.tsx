@@ -1,7 +1,7 @@
 //Packages
 import { Route, Routes } from 'react-router-dom';
 import HomeLayout from './components/layout/homeLayout';
-import Home from './pages/home/Home';
+import HomePage from './pages/home/HomePage';
 
 //Layouts
 // import { MainLayout } from "./components/layouts/MainLayout";
@@ -21,7 +21,7 @@ const App = () => {
     return (
         <Routes>
             <Route path="/" element={<HomeLayout />}>
-                <Route path="/" index element={<Home />} />
+                <Route path="/" index element={<HomePage />} />
             </Route>
             {/* <Route path="/login" element={<UserLogin />} /> */}
             {/* <Route path="/register" element={<CreateAccount />} /> */}
