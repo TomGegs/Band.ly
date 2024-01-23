@@ -17,6 +17,10 @@ module.exports = {
             },
         },
         extend: {
+            fontFamily: {
+                Alexandria: ['Alexandria', 'sans-serif'],
+                Caveat: ['Caveat', 'cursive'],
+            },
             colors: {
                 border: 'hsl(var(--border))',
                 input: 'hsl(var(--input))',
