@@ -3,7 +3,7 @@ import bandlyVideoBg from '../../assets/bandlyVideoBg.mp4';
 const HeroSection = () => {
     const videoBg = bandlyVideoBg;
     return (
-        <div className="bg-slate-black relative flex h-full max-w-[1000px] flex-col rounded-2xl border-2 border-muted-foreground">
+        <div className="bg-slate-black relative flex h-full flex-col rounded-2xl border-2 border-muted-foreground">
             <video
                 src={videoBg}
                 autoPlay={true}
