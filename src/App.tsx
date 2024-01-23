@@ -2,6 +2,8 @@
 import { Route, Routes } from 'react-router-dom';
 import HomeLayout from './components/layout/homeLayout';
 import HomePage from './pages/home/HomePage';
+import MainLayout from './components/layout/mainLayout';
+import DashboardPage from './pages/dashboard/DashboardPage';
 
 //Layouts
 // import { MainLayout } from "./components/layouts/MainLayout";
@@ -22,6 +24,9 @@ const App = () => {
         <Routes>
             <Route path="/" element={<HomeLayout />}>
                 <Route path="/" index element={<HomePage />} />
+            </Route>
+            <Route path="/dashboard" element={<MainLayout />}>
+                <Route path="/dashboard" element={<DashboardPage />} />
             </Route>
             {/* <Route path="/login" element={<UserLogin />} /> */}
             {/* <Route path="/register" element={<CreateAccount />} /> */}

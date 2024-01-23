@@ -33,7 +33,7 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
             <div className="absolute right-10 top-10">
                 <Button variant="outline">Create Account</Button>
             </div>
-            <div className="mx-auto flex w-[400px] flex-col gap-y-4">
+            <div className="mx-auto flex w-[400px] flex-col gap-y-4 lg:mt-20">
                 <h1>Sign into your account</h1>
                 <div className="text-sm text-secondary">
                     Enter your details below to sign into your account

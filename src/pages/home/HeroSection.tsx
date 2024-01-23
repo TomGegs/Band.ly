@@ -1,9 +1,10 @@
 import bandlyVideoBg from '../../assets/bandlyVideoBg.mp4';
-
+import videoOverlayLines from '../../assets/videoOverlayLines.webp';
 const HeroSection = () => {
     const videoBg = bandlyVideoBg;
+    const overlay = videoOverlayLines;
     return (
-        <div className="bg-slate-black relative flex h-full max-w-[1000px] flex-col rounded-2xl border-2 border-muted-foreground">
+        <div className="bg-slate-black relative mx-auto flex h-full w-[90%] flex-col rounded-2xl border-2 border-muted-foreground">
             <video
                 src={videoBg}
                 autoPlay={true}
@@ -12,22 +13,15 @@ const HeroSection = () => {
                 playsInline={true}
                 className="absolute z-0 h-full w-full overflow-hidden rounded-2xl object-cover blur-[6px] brightness-50"
             ></video>
-            <div className="relative flex w-full justify-start p-10 text-xl text-white ">
-                <p className="transition-all hover:scale-[1.05] ">
-                    ________Bandly
-                </p>
-            </div>
-            <div className="relative z-10 mx-auto flex h-full w-full flex-col justify-end pb-10 pl-10 text-start">
-                <h1 className="font-mono font-black leading-snug lg:text-[4rem]">
-                    Focus on
-                    <br /> what matters
-                </h1>
-                <div className="text-lg leading-loose text-secondary">
-                    Spend time managing your band and not your data. <br />{' '}
-                    Bandly simplifies your band's operational and touring
-                    financial data, analysis and forecasting.
-                </div>
-            </div>
+            <img src={overlay} alt="" className="absolute z-0 opacity-5 h-full" />
+            <h1 className="relative flex h-full w-full items-center justify-center font-Alexandria text-5xl text-white transition-all  hover:scale-[1.05] ">
+                BAND.IT
+            </h1>
+            <h2 className="relative flex w-full items-end justify-start pb-6 pl-10  text-left font-Alexandria text-5xl text-white">
+                Rock your tours
+                <br />
+                Not your savings
+            </h2>
         </div>
     );
 };
