@@ -19,13 +19,12 @@ const HeroSection = () => {
             </div>
             <div className="relative z-10 mx-auto flex h-full w-full flex-col justify-end pb-10 pl-10 text-start">
                 <h1 className="font-mono font-black leading-snug lg:text-[4rem]">
-                    Focus on
-                    <br /> what matters
+                    Harmonising Tours
+                    <br />
+                    Amplifying Savings
                 </h1>
                 <div className="text-lg leading-loose text-secondary">
-                    Spend time managing your band and not your data. <br />{' '}
-                    Bandly simplifies your band's operational and touring
-                    financial data, analysis and forecasting.
+                    Manage your band's financial data, analysis and forecasting in one place.
                 </div>
             </div>
         </div>
