@@ -5,9 +5,10 @@ import * as React from 'react';
 import { Label } from '../../components/ui/label';
 import { Input } from '../../components/ui/input';
 import { Button } from '../../components/ui/button';
+
 import { cn } from '../../utils/utils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import waveWhite from '../../assets/waveWhite.gif';
 
 interface LoginFormProps extends React.HTMLAttributes<HTMLDivElement> {}
@@ -25,7 +26,7 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
     }
 
     const githubIcon = (
-        <FontAwesomeIcon icon={faGithub} size="xl" className="mr-1" />
+        <FontAwesomeIcon icon={faGoogle} size="xl" className="mr-1" />
     );
     const loadingIcon = <img src={waveWhite} className="w-full" />;
     return (
@@ -96,7 +97,7 @@ export function LoginForm({ className, ...props }: LoginFormProps) {
                         {isLoading ? (
                             <div className="mr-2 ">{loadingIcon}</div> //spinner
                         ) : (
-                            <div className="mr-2">{githubIcon} GitHub</div> //git login icon
+                            <div className="mr-2">{githubIcon} Google</div>
                         )}
                     </Button>
                 </div>
